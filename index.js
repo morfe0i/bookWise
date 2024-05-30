@@ -20,10 +20,10 @@ const storage = multer.diskStorage({
 
 const db = new pg.Client({
     user : "postgres",
-    host : "localhost",
-    database : "bookwise",
-    password : "123456789",
-    port : 5432
+    host : "monorail.proxy.rlwy.net",
+    database : "railway",
+    password : "JNrlKLufjNOXrtQpCMqYdtCsboraiHVV",
+    port : 50715
   });
   
 db.connect();
