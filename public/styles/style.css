@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Black+Ops+One&family=Libre+Baskerville&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+}
+
+.card {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row; /* Set flex-direction to row */
+}
+
+.card img {
+    max-width: 200px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.content {
+    flex-grow: 1;
+}
+
+.rating-date {
+    display: flex;
+    justify-content: space-between; /* Align items at each end */
+    align-items: flex-end; /* Align items at the bottom */
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+}
+
+.star {
+    color: #FFD700;
+    margin-right: 4px;
+}
+
+.date {
+    font-size: 14px;
+    color: #888;
+}
+
+/* Custom styles for the header */
+.custom-header {
+    font-family: 'Pacifico', sans-serif;;
+    text-align: center;
+    font-size: 36px; /* Adjust the font size as needed */
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.break-line {
+    border-bottom: 2px solid #000; /* Adjust the border color as needed */
+    margin: 20px 0;
+}
+
+/* Custom styles for the brown button */
+.btn-brown {
+    background-color: #8B4513; /* Use the hex code or the color you prefer */
+    border-color: #8B4513;
+    color: #ffffff; /* Set text color to white or another suitable contrast color */
+}
+
+/* Hover effect for better user interaction (optional) */
+.btn-brown:hover {
+    color: #ffffff;
+    background-color: #A0522D; /* Darken the color on hover */
+}
+
