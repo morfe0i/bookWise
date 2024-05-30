@@ -2,6 +2,9 @@ import express from "express";
 import bodyParser from "body-parser";
 import pg from "pg";
 import multer from "multer";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 const app = express();
 const port = 3000;
@@ -19,11 +22,11 @@ const storage = multer.diskStorage({
 });
 
 const db = new pg.Client({
-    user : "postgres",
-    host : "monorail.proxy.rlwy.net",
-    database : "railway",
-    password : "JNrlKLufjNOXrtQpCMqYdtCsboraiHVV",
-    port : 50715
+    user : process.env.PGUSER,
+    host : process.env.PGHOST,
+    database : process.env.PGDATABASE,
+    password : process.env.PGPASSWORD,
+    port : process.env.PGPORT
   });
   
 db.connect();
